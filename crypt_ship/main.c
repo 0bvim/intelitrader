@@ -6,7 +6,7 @@
 static void convert_and_swap_bits(char *octet);
 
 int main(void) {
-	char *token, *saveptr;
+  char *token, *saveptr;
   char to_decrypt[] =
       "10010110 11110111 01010110 00000001 00010111 00100110 01010111 00000001 "
       "00010111 01110110 01010111 00110110 11110111 11010111 01010111 00000011";
