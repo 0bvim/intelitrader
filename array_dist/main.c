@@ -8,9 +8,9 @@ static void print_array(int *array, int size);
 static void find_distance(int *array1, int size1, int *array2, int size2);
 
 int main(void) {
-  int size1 = 10, size2 = 10;
-  int array1[10];
-  int array2[10];
+  int size1 = 10, size2 = 5;
+  int array1[size1];
+  int array2[size2];
 
   srand(time(NULL));
 
@@ -18,13 +18,13 @@ int main(void) {
   fill_array(array2, size2);
 
   // remova o bloco de comantario abaixo para ver os valores de cada array
-  //  puts("Valores do Array1:");
-  //  print_array(array1, size1);
+  // puts("Valores do Array1:");
+  // print_array(array1, size1);
   //
-  //  puts("\nValores do Array2:");
-  //  print_array(array2, size2);
+  // puts("\nValores do Array2:");
+  // print_array(array2, size2);
   //
-  //  putchar('\n');
+  // putchar('\n');
 
   find_distance(array1, size1, array2, size2);
 
