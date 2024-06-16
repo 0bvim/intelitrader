@@ -1,3 +1,4 @@
+#include <algorithm>
 #include <exception>
 #include <iomanip>
 #include <iostream>
@@ -29,6 +30,11 @@ public:
   ~PriceBook() {}
 
   void insertOffer(int position, double value, int amount) {
+		if (position - 1 > offers.size()) {
+			std::cout << "tamanho da list: " << offers.size() << std::endl;
+			throw std::invalid_argument("Posicao escolhida maior que o tamanho da lista");
+		}
+
     Offer newOffer = {position, value, amount};
 
     offers.insert(offers.begin() + position - 1, newOffer);
@@ -50,11 +56,11 @@ public:
   }
 
   void deletOffer(int position) {
-    if (position < 1) {
-      throw std::invalid_argument("O posicao precisa ser maior que zero.");
+    if (position < 1 || position > offers.size()) {
+      throw std::invalid_argument("Posicao invalida.");
     } else if (offers.empty()) {
       throw std::invalid_argument("Nao tem o que deletar, o livro esta vazio!");
-    }
+		}
     offers.erase(offers.begin() + position - 1);
     for (size_t i = position; i < offers.size(); ++i) {
       offers[i].position++;
@@ -79,14 +85,17 @@ public:
 
 enum { INSERT, MOD, DEL };
 
+bool isNumber(const std::string& str) {
+    return !str.empty() && std::all_of(str.begin(), str.end(), ::isdigit);
+}
+
 int main(void) {
-  int notifications;
-
-  std::cout << "Insira a quantidade de notificacoes" << std::endl;
-  std::cin >> notifications;
-
   try {
-    PriceBook book;
+		PriceBook book;
+		int notifications;
+
+    std::cout << "Insira a quantidade de notificacoes" << std::endl;
+    std::cin >> notifications;
 
     for (int i = 0; i < notifications; ++i) {
       int position, action, amount;
@@ -125,3 +134,4 @@ int main(void) {
 
   return 0;
 }
+
