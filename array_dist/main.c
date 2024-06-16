@@ -17,7 +17,7 @@ int main(void) {
   fill_array(array1, size1);
   fill_array(array2, size2);
 
-  // remova essa bloco de comantario para ver os valores de cada array
+  // remova o bloco de comantario abaixo para ver os valores de cada array
   //  puts("Valores do Array1:");
   //  print_array(array1, size1);
   //
