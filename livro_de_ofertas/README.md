@@ -12,9 +12,9 @@ Para executar utilize o seguinte comando
 ./a.out
 ```
 
-> Para facilitar a utilizacao, eu criei um arquivo chamado input.txt
-> que contem todos os inputs do exemplo.
-> Voce pode utiliza para rodar da seguinte maneira
+> Para facilitar a utilizacao do programa, eu criei um arquivo chamado input.txt
+> que contem todos os inputs do exemplo dado no readme do desafio.
+> Voce pode utiliza-lo da seguinte maneira:
 ```bash
 ./a.out < input.txt
 ```
