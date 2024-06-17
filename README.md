@@ -1,14 +1,13 @@
 # intelitrader
 
-### Para executar os desafios
-> Site para executar os exercicios [Python Tutors](https://www.onlinegdb.com/online_c_compiler)
+### Para executar o Cripto e o Menor distancia array, abra o site abaixo em uma nova guia.
+> [Python Tutors](https://www.onlinegdb.com/online_c_compiler)
 
-Primeiro desafio \
-[Cripto](./criptografia_navio//)
+Primeiro desafio<br>[Cripto](./criptografia_navio/)
 
-Segundo desafio \
-[Livro de ofertas](./livro_de_ofertas//)
+Segundo desafio<br>
+> Esse desafio tem as instrucoes em um readme na propria pasta. \
+[Livro de ofertas](./livro_de_ofertas/)
 
-Terceiro desafio \
-[Menor distancia array](./menor_distancia_array///)
+Terceiro desafio<br>[Menor distancia array](./menor_distancia_array/)
 
