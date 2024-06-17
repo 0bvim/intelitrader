@@ -3,11 +3,11 @@
 > Site para executar os exercicios [Python Tutors](https://www.onlinegdb.com/online_c_compiler)
 
 Primeiro desafio \
-[Cripto](./crypt_ship/)
+[Cripto](./criptografia_navio//)
 
 Segundo desafio \
-[Livro de ofertas](./book/)
+[Livro de ofertas](./livro_de_ofertas//)
 
 Terceiro desafio \
-[Array dist](./array_dist//)
+[Array dist](./menor_distancia_array///)
 
