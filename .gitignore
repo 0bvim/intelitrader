@@ -51,4 +51,5 @@ Module.symvers
 Mkfile.old
 dkms.conf
 a.out
+test.txt
 main

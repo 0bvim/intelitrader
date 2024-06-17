@@ -62,8 +62,8 @@ public:
       throw std::invalid_argument("Nao tem o que deletar, o livro esta vazio!");
 		}
     offers.erase(offers.begin() + position - 1);
-    for (size_t i = position; i < offers.size(); ++i) {
-      offers[i].position++;
+    for (size_t i = 0; i < offers.size(); ++i) {
+      offers[i].position = i + 1;
     }
   }
 
